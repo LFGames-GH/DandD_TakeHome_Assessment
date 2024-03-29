@@ -56,7 +56,9 @@ function App() {
     };
 
     const rerollInitiative = () => {
-        var temp = [];
+        if (combatants.length == 0) return;
+
+        let temp = [];
 
         combatants.forEach(combatant => {
             temp.push({
@@ -67,6 +69,21 @@ function App() {
         });
 
         sortAndSetCombatants(temp);
+    };
+
+    const nextTurn = () => {
+        if (combatants.length == 0) return;
+
+        setCombatants(([first, ...rest]) => [...rest, first]);
+    };
+
+    const previousTurn = () => {
+        if (combatants.length == 0) return;
+
+        let temp = [...combatants];
+        let lastItem = temp.pop();
+
+        setCombatants([lastItem, ...temp]);
     };
 
     return (
@@ -80,8 +97,8 @@ function App() {
                 <div id="controls">
                     <div>
                         <div className="flex">
-                            <button className="c-accent">Previous</button>
-                            <button className="c-accent">Next</button>
+                            <button className="c-accent" onClick={previousTurn}>Previous</button>
+                            <button className="c-accent" onClick={nextTurn}>Next</button>
                         </div>
                         <button className="c-accent" onClick={rerollInitiative}>Reroll Initiative</button>
                     </div>
