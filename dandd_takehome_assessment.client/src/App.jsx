@@ -15,6 +15,12 @@ function App() {
         return (Math.floor(Math.random() * 20) + 1) + Number(bonus);
     };
 
+    const sortAndSetCombatants = (tempArray) => {
+        setCombatants(tempArray.sort((a, b) => {
+            return b.initiative - a.initiative;
+        }));
+    };
+
     const addCombatant = () => {
         if (addData.name == '' || addData.bonus == '') return;
 
@@ -26,9 +32,7 @@ function App() {
             bonus: addData.bonus
         });
 
-        setCombatants(temp.sort((a, b) => {
-            return b.initiative - a.initiative;
-        }));
+        sortAndSetCombatants(temp);
 
         // Reset values
         setAddData({
@@ -62,9 +66,7 @@ function App() {
             });
         });
 
-        setCombatants(temp.sort((a, b) => {
-            return b.initiative - a.initiative;
-        }));
+        sortAndSetCombatants(temp);
     };
 
     return (
