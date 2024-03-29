@@ -12,15 +12,18 @@ function App() {
     const addCombatant = () => {
         if (addData.name == '' || addData.bonus == '') return;
 
+        const initiative = Math.floor(Math.random() * 20) + 1;
+        console.log(initiative);
+
         var temp = combatants;
 
         temp.push({
             name: addData.name,
-            bonus: addData.bonus
+            initiative: initiative + addData.bonus
         });
 
         setCombatants(temp.sort((a, b) => {
-            return b.bonus - a.bonus;
+            return b.initiative - a.initiative;
         }));
 
         // Reset values
