@@ -17,9 +17,15 @@ function App() {
     };
 
     const sortAndSetCombatants = (tempArray) => {
-        setCombatants(tempArray.sort((a, b) => {
+        let firstItem = hasStarted ? tempArray.shift() : null;
+
+        tempArray.sort((a, b) => {
             return b.initiative - a.initiative;
-        }));
+        });
+
+        if (firstItem != null) tempArray.unshift(firstItem);
+
+        setCombatants(tempArray);
     };
 
     const addCombatant = () => {
