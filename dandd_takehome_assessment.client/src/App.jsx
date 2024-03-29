@@ -12,10 +12,16 @@ function App() {
     const addCombatant = () => {
         if (addData.name == '' || addData.bonus == '') return;
 
-        combatants.push({
+        var temp = combatants;
+
+        temp.push({
             name: addData.name,
             bonus: addData.bonus
         });
+
+        setCombatants(temp.sort((a, b) => {
+            return b.bonus - a.bonus;
+        }));
 
         // Reset values
         setAddData({
