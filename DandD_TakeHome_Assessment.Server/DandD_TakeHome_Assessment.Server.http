@@ -1,0 +1,6 @@
+@DandD_TakeHome_Assessment.Server_HostAddress = http://localhost:5295
+
+GET {{DandD_TakeHome_Assessment.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
