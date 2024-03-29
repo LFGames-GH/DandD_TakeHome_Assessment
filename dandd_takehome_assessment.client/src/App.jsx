@@ -1,13 +1,41 @@
+import { useEffect, useState } from 'react';
 import Combatants from './components/Combatants';
 import './App.css';
 
 function App() {
+    const [addData, setAddData] = useState({
+        name: '',
+        bonus: ''
+    });
+    const [combatants, setCombatants] = useState([]);
+
+    const addCombatant = () => {
+        if (addData.name == '' || addData.bonus == '') return;
+
+        combatants.push({
+            name: addData.name,
+            bonus: addData.bonus
+        });
+
+        // Reset values
+        setAddData({
+            name: '',
+            bonus: ''
+        });
+    };
+
+    const handleAddDataChange = (e) => {
+        setAddData((prev) => {
+            return { ...prev, [e.target.name]: e.target.value };
+        });
+    }
+
     return (
         <div className="page flex">
             <h1>Initiative Tracker</h1>
 
             <div id="content">
-                <Combatants />
+                <Combatants combatants={combatants} />
 
                 <div id="controls">
                     <div>
@@ -24,9 +52,9 @@ function App() {
                     </div>
 
                     <div>
-                        <input type="text" placeholder="Name" />
-                        <input type="text" placeholder="Initiative Bonus" />
-                        <button>Add Combatant</button>
+                        <input type="text" placeholder="Name" value={addData.name} name="name" onChange={handleAddDataChange} />
+                        <input type="number" placeholder="Initiative Bonus" value={addData.bonus} name="bonus" onChange={handleAddDataChange} />
+                        <button onClick={addCombatant}>Add Combatant</button>
                     </div>
                 </div>
             </div>
