@@ -4,6 +4,7 @@ import redFrame from '../src/assets/images/OrnateRedFrame.png';
 import './App.css';
 
 function App() {
+    const [hasStarted, setHasStarted] = useState(false);
     const [addData, setAddData] = useState({
         name: '',
         bonus: ''
@@ -24,7 +25,7 @@ function App() {
     const addCombatant = () => {
         if (addData.name == '' || addData.bonus == '') return;
 
-        var temp = combatants;
+        var temp = [...combatants];
 
         temp.push({
             name: addData.name,
@@ -75,6 +76,8 @@ function App() {
         if (combatants.length == 0) return;
 
         setCombatants(([first, ...rest]) => [...rest, first]);
+
+        if (!hasStarted) setHasStarted(true);
     };
 
     const previousTurn = () => {
