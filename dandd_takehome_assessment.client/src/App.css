@@ -1,5 +1,4 @@
 ﻿.page {
-    display: flex;
     flex-direction: column;
 }
 
@@ -41,5 +40,43 @@ h1, button {
 
 #controls {
     margin: auto;
-    max-width: 400px;
+    max-width: 250px;
+}
+
+#controls > div {
+    margin-bottom: 2em;
+}
+
+button {
+    background-color: #575757;
+    border: 0;
+    color: white;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.c-accent {
+    background-color: #b6060e;
+}
+
+.flex > button {
+    margin-bottom: 0.5em;
+}
+
+.flex > button:first-child {
+    margin-right: 0.25em;
+}
+
+.flex > button:last-child {
+    margin-left: 0.25em;
+}
+
+input {
+    background-color: black;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    text-align: center;
+    width: 100%;
 }

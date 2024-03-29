@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
     return (
-        <div className="page">
+        <div className="page flex">
             <h1>Initiative Tracker</h1>
 
             <div id="content">
@@ -26,9 +26,11 @@ function App() {
 
                 <div id="controls">
                     <div>
-                        <button>Previous</button>
-                        <button>Next</button>
-                        <button>Reroll Initiative</button>
+                        <div className="flex">
+                            <button className="c-accent">Previous</button>
+                            <button className="c-accent">Next</button>
+                        </div>
+                        <button className="c-accent">Reroll Initiative</button>
                     </div>
                 
                     <div>
