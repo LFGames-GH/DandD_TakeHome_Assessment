@@ -11,16 +11,19 @@ function App() {
     const [removeName, setRemoveName] = useState('');
     const [combatants, setCombatants] = useState([]);
 
+    const getInitiative = (bonus) => {
+        return (Math.floor(Math.random() * 20) + 1) + Number(bonus);
+    };
+
     const addCombatant = () => {
         if (addData.name == '' || addData.bonus == '') return;
-
-        const initiative = Math.floor(Math.random() * 20) + 1;
 
         var temp = combatants;
 
         temp.push({
             name: addData.name,
-            initiative: initiative + addData.bonus
+            initiative: getInitiative(addData.bonus),
+            bonus: addData.bonus
         });
 
         setCombatants(temp.sort((a, b) => {
@@ -46,7 +49,23 @@ function App() {
         setAddData((prev) => {
             return { ...prev, [e.target.name]: e.target.value };
         });
-    }
+    };
+
+    const rerollInitiative = () => {
+        var temp = [];
+
+        combatants.forEach(combatant => {
+            temp.push({
+                name: combatant.name,
+                initiative: getInitiative(combatant.bonus),
+                bonus: combatant.bonus
+            });
+        });
+
+        setCombatants(temp.sort((a, b) => {
+            return b.initiative - a.initiative;
+        }));
+    };
 
     return (
         <div className="page flex">
@@ -62,7 +81,7 @@ function App() {
                             <button className="c-accent">Previous</button>
                             <button className="c-accent">Next</button>
                         </div>
-                        <button className="c-accent">Reroll Initiative</button>
+                        <button className="c-accent" onClick={rerollInitiative}>Reroll Initiative</button>
                     </div>
                 
                     <div>
