@@ -17,27 +17,6 @@ h1, button {
     margin-top: 25px;
 }
 
-.combatants {
-    margin: -25px 0 1.5em;
-}
-
-.combatant {
-    display: inline-block;
-    margin: 0 0.5em;
-}
-
-.thumbnail {
-    background-color: black;
-    border: 1px solid gray;
-    margin-bottom: 0.25em;
-    height: 50px;
-    width: 50px;
-}
-
-.combatant p {
-    margin: 0;
-}
-
 #controls {
     margin: auto;
     max-width: 250px;

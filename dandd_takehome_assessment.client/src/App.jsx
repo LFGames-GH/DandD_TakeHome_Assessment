@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import Combatants from './components/Combatants';
 import './App.css';
 
 function App() {
@@ -7,22 +7,7 @@ function App() {
             <h1>Initiative Tracker</h1>
 
             <div id="content">
-                <div className="combatants">
-                    <div className="combatant">
-                        <div className="thumbnail"></div>
-                        <p>Name</p>
-                    </div>
-
-                    <div className="combatant">
-                        <div className="thumbnail"></div>
-                        <p>Name</p>
-                    </div>
-
-                    <div className="combatant">
-                        <div className="thumbnail"></div>
-                        <p>Name</p>
-                    </div>
-                </div>
+                <Combatants />
 
                 <div id="controls">
                     <div>
