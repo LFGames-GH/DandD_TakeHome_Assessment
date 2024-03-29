@@ -3,9 +3,7 @@
     margin: 0 0.5em;
 }
 
-.combatant .thumbnail {
-    background-color: black;
-    border: 1px solid gray;
+.combatant img {
     margin-bottom: 0.25em;
     height: 50px;
     width: 50px;

@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{BC477E2F-AF44-49CF-A20C-E94DF425F41E}|dandd_takehome_assessment.client\\dandd_takehome_assessment.client.esproj|solutionrelative:dandd_takehome_assessment.client\\src\\components\\combatants.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BC477E2F-AF44-49CF-A20C-E94DF425F41E}|dandd_takehome_assessment.client\\dandd_takehome_assessment.client.esproj|c:\\users\\waldo\\source\\repos\\dandd_takehome_assessment\\dandd_takehome_assessment.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BC477E2F-AF44-49CF-A20C-E94DF425F41E}|dandd_takehome_assessment.client\\dandd_takehome_assessment.client.esproj|solutionrelative:dandd_takehome_assessment.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BC477E2F-AF44-49CF-A20C-E94DF425F41E}|dandd_takehome_assessment.client\\dandd_takehome_assessment.client.esproj|c:\\users\\waldo\\source\\repos\\dandd_takehome_assessment\\dandd_takehome_assessment.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{BC477E2F-AF44-49CF-A20C-E94DF425F41E}|dandd_takehome_assessment.client\\dandd_takehome_assessment.client.esproj|solutionrelative:dandd_takehome_assessment.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
@@ -22,17 +26,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.css",
+              "DocumentMoniker": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\dandd_takehome_assessment.client\\src\\App.css",
+              "RelativeDocumentMoniker": "dandd_takehome_assessment.client\\src\\App.css",
+              "ToolTip": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\dandd_takehome_assessment.client\\src\\App.css",
+              "RelativeToolTip": "dandd_takehome_assessment.client\\src\\App.css",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-03-29T20:22:47.203Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Combatant.jsx",
               "DocumentMoniker": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\dandd_takehome_assessment.client\\src\\components\\Combatant.jsx",
               "RelativeDocumentMoniker": "dandd_takehome_assessment.client\\src\\components\\Combatant.jsx",
-              "ToolTip": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\dandd_takehome_assessment.client\\src\\components\\Combatant.jsx",
-              "RelativeToolTip": "dandd_takehome_assessment.client\\src\\components\\Combatant.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAfAAAA",
+              "ToolTip": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\dandd_takehome_assessment.client\\src\\components\\Combatant.jsx*",
+              "RelativeToolTip": "dandd_takehome_assessment.client\\src\\components\\Combatant.jsx*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2024-03-29T19:44:09.373Z",
               "EditorCaption": ""
@@ -45,20 +62,20 @@
               "RelativeDocumentMoniker": "dandd_takehome_assessment.client\\src\\components\\Combatants.jsx",
               "ToolTip": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\dandd_takehome_assessment.client\\src\\components\\Combatants.jsx",
               "RelativeToolTip": "dandd_takehome_assessment.client\\src\\components\\Combatants.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA7AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2024-03-29T19:37:29.598Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "App.jsx",
               "DocumentMoniker": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\dandd_takehome_assessment.client\\src\\App.jsx",
               "RelativeDocumentMoniker": "dandd_takehome_assessment.client\\src\\App.jsx",
               "ToolTip": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\dandd_takehome_assessment.client\\src\\App.jsx",
               "RelativeToolTip": "dandd_takehome_assessment.client\\src\\App.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAqwBEAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2024-03-29T16:41:35.779Z",
               "EditorCaption": ""

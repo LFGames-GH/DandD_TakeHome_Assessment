@@ -10,6 +10,11 @@ h1, button {
     text-transform: uppercase;
 }
 
+.frame {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
 #content {
     background-color: #262525;
     color: white;
@@ -54,6 +59,7 @@ input {
     background-color: black;
     border: 1px solid gray;
     box-sizing: border-box;
+    color: white;
     margin-bottom: 0.5em;
     padding: 0.5em;
     text-align: center;

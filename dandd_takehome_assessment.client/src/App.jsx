@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Combatants from './components/Combatants';
+import redFrame from '../src/assets/images/OrnateRedFrame.png';
 import './App.css';
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
     return (
         <div className="page flex">
             <h1>Initiative Tracker</h1>
+            <img className="frame" src={redFrame} />
 
             <div id="content">
                 <Combatants combatants={combatants} />
