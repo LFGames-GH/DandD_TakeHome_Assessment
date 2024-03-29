@@ -16,8 +16,8 @@ function App() {
         return (Math.floor(Math.random() * 20) + 1) + Number(bonus);
     };
 
-    const sortAndSetCombatants = (tempArray) => {
-        let firstItem = hasStarted ? tempArray.shift() : null;
+    const sortAndSetCombatants = (tempArray, preserveFirst) => {
+        let firstItem = preserveFirst ? tempArray.shift() : null;
 
         tempArray.sort((a, b) => {
             return b.initiative - a.initiative;
@@ -39,7 +39,7 @@ function App() {
             bonus: addData.bonus
         });
 
-        sortAndSetCombatants(temp);
+        sortAndSetCombatants(temp, hasStarted);
 
         // Reset values
         setAddData({
@@ -75,7 +75,8 @@ function App() {
             });
         });
 
-        sortAndSetCombatants(temp);
+        sortAndSetCombatants(temp, false);
+        setHasStarted(false);
     };
 
     const nextTurn = () => {
