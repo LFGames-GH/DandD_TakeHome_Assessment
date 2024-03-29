@@ -8,13 +8,13 @@ function App() {
         name: '',
         bonus: ''
     });
+    const [removeName, setRemoveName] = useState('');
     const [combatants, setCombatants] = useState([]);
 
     const addCombatant = () => {
         if (addData.name == '' || addData.bonus == '') return;
 
         const initiative = Math.floor(Math.random() * 20) + 1;
-        console.log(initiative);
 
         var temp = combatants;
 
@@ -32,6 +32,14 @@ function App() {
             name: '',
             bonus: ''
         });
+    };
+
+    const removeCombatant = () => {
+        if (removeName == '') return;
+
+        setCombatants(combatants.filter((combatant) => {
+            return combatant.name !== removeName;
+        }));
     };
 
     const handleAddDataChange = (e) => {
@@ -58,8 +66,8 @@ function App() {
                     </div>
                 
                     <div>
-                        <input type="text" placeholder="Name" />
-                        <button>Remove Combatant</button>
+                        <input type="text" placeholder="Name" value={removeName} onChange={(e) => setRemoveName(e.target.value)} />
+                        <button onClick={removeCombatant}>Remove Combatant</button>
                     </div>
 
                     <div>
