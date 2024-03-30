@@ -4,9 +4,9 @@ namespace DandD_TakeHome_Assessment.Server.Hubs
 {
     public class PartyHub : Hub
     {
-        public async Task SendUpdate(string message)
+        public async Task SendUpdate(string data)
         {
-            await Clients.All.SendAsync("ReceiveUpdate", message);
+            await Clients.All.SendAsync("ReceiveUpdate", data);
         }
     }
 }

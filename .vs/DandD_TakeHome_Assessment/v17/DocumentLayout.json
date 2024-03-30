@@ -7,16 +7,12 @@
       "RelativeMoniker": "D:0:0:{BC477E2F-AF44-49CF-A20C-E94DF425F41E}|dandd_takehome_assessment.client\\dandd_takehome_assessment.client.esproj|solutionrelative:dandd_takehome_assessment.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9F3AA82-6E1C-4959-AD8A-4FC6E99978B4}|DandD_TakeHome_Assessment.Server\\DandD_TakeHome_Assessment.Server.csproj|c:\\users\\waldo\\source\\repos\\dandd_takehome_assessment\\dandd_takehome_assessment.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F9F3AA82-6E1C-4959-AD8A-4FC6E99978B4}|DandD_TakeHome_Assessment.Server\\DandD_TakeHome_Assessment.Server.csproj|solutionrelative:dandd_takehome_assessment.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{F9F3AA82-6E1C-4959-AD8A-4FC6E99978B4}|DandD_TakeHome_Assessment.Server\\DandD_TakeHome_Assessment.Server.csproj|c:\\users\\waldo\\source\\repos\\dandd_takehome_assessment\\dandd_takehome_assessment.server\\hubs\\partyhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9F3AA82-6E1C-4959-AD8A-4FC6E99978B4}|DandD_TakeHome_Assessment.Server\\DandD_TakeHome_Assessment.Server.csproj|solutionrelative:dandd_takehome_assessment.server\\hubs\\partyhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9F3AA82-6E1C-4959-AD8A-4FC6E99978B4}|DandD_TakeHome_Assessment.Server\\DandD_TakeHome_Assessment.Server.csproj|c:\\users\\waldo\\source\\repos\\dandd_takehome_assessment\\dandd_takehome_assessment.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9F3AA82-6E1C-4959-AD8A-4FC6E99978B4}|DandD_TakeHome_Assessment.Server\\DandD_TakeHome_Assessment.Server.csproj|solutionrelative:dandd_takehome_assessment.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC477E2F-AF44-49CF-A20C-E94DF425F41E}|dandd_takehome_assessment.client\\dandd_takehome_assessment.client.esproj|c:\\users\\waldo\\source\\repos\\dandd_takehome_assessment\\dandd_takehome_assessment.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{BC477E2F-AF44-49CF-A20C-E94DF425F41E}|dandd_takehome_assessment.client\\dandd_takehome_assessment.client.esproj|solutionrelative:dandd_takehome_assessment.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PartyHub.cs",
+              "DocumentMoniker": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\DandD_TakeHome_Assessment.Server\\Hubs\\PartyHub.cs",
+              "RelativeDocumentMoniker": "DandD_TakeHome_Assessment.Server\\Hubs\\PartyHub.cs",
+              "ToolTip": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\DandD_TakeHome_Assessment.Server\\Hubs\\PartyHub.cs",
+              "RelativeToolTip": "DandD_TakeHome_Assessment.Server\\Hubs\\PartyHub.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T22:20:22.293Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -36,7 +45,7 @@
               "RelativeDocumentMoniker": "DandD_TakeHome_Assessment.Server\\Program.cs",
               "ToolTip": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\DandD_TakeHome_Assessment.Server\\Program.cs",
               "RelativeToolTip": "DandD_TakeHome_Assessment.Server\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAbAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-30T22:12:09.723Z",
               "EditorCaption": ""
@@ -49,35 +58,9 @@
               "RelativeDocumentMoniker": "dandd_takehome_assessment.client\\src\\App.jsx",
               "ToolTip": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\dandd_takehome_assessment.client\\src\\App.jsx",
               "RelativeToolTip": "dandd_takehome_assessment.client\\src\\App.jsx",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2024-03-30T22:09:26.959Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\DandD_TakeHome_Assessment.Server\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "DandD_TakeHome_Assessment.Server\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\DandD_TakeHome_Assessment.Server\\Properties\\launchSettings.json",
-              "RelativeToolTip": "DandD_TakeHome_Assessment.Server\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABAAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-30T22:04:32.923Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "vite.config.js",
-              "DocumentMoniker": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\dandd_takehome_assessment.client\\vite.config.js",
-              "RelativeDocumentMoniker": "dandd_takehome_assessment.client\\vite.config.js",
-              "ToolTip": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\dandd_takehome_assessment.client\\vite.config.js",
-              "RelativeToolTip": "dandd_takehome_assessment.client\\vite.config.js",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAC0AAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-03-30T19:44:07.762Z",
               "EditorCaption": ""
             }
           ]

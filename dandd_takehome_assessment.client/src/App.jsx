@@ -5,6 +5,7 @@ import redFrame from '../src/assets/images/OrnateRedFrame.png';
 import './App.css';
 
 function App() {
+    // SignalR connection
     const connection = new HubConnectionBuilder().withUrl('https://localhost:7175/partyHub', {
         skipNegotiation: true,
         transport: HttpTransportType.WebSockets
@@ -14,10 +15,13 @@ function App() {
         .then(() => console.log('Connected to SignalR hub'))
         .catch(err => console.error('Error connecting to hub:', err));
 
-    connection.on('ReceiveUpdate', update => {
-        console.log('Received update:', update);
+    connection.on('ReceiveUpdate', updatedCombatants => {
+        console.log('Received update:', updatedCombatants);
+        setCombatants(JSON.parse(updatedCombatants));
     });
 
+
+    // State
     const [hasStarted, setHasStarted] = useState(false);
     const [addData, setAddData] = useState({
         name: '',
@@ -26,6 +30,8 @@ function App() {
     const [removeName, setRemoveName] = useState('');
     const [combatants, setCombatants] = useState([]);
 
+
+    // Methods
     const getInitiative = (bonus) => {
         return (Math.floor(Math.random() * 20) + 1) + Number(bonus);
     };
@@ -40,6 +46,10 @@ function App() {
         if (firstItem != null) tempArray.unshift(firstItem);
 
         setCombatants(tempArray);
+
+        connection.invoke("SendUpdate", JSON.stringify(tempArray)).catch((err) => {
+            return console.error(err.toString());
+        });
     };
 
     const addCombatant = () => {
@@ -54,10 +64,6 @@ function App() {
         });
 
         sortAndSetCombatants(temp, hasStarted);
-
-        connection.invoke("SendUpdate", "This is a test!").catch((err) => {
-            return console.error(err.toString());
-        });
 
         // Reset values
         setAddData({
