@@ -45,8 +45,7 @@ function App() {
 
         if (firstItem != null) tempArray.unshift(firstItem);
 
-        setCombatants(tempArray);
-
+        // Invoking connection will call setCombatants
         connection.invoke("SendUpdate", JSON.stringify(tempArray)).catch((err) => {
             return console.error(err.toString());
         });
@@ -75,9 +74,17 @@ function App() {
     const removeCombatant = () => {
         if (removeName == '') return;
 
-        setCombatants(combatants.filter((combatant) => {
+        const filteredArray = combatants.filter((combatant) => {
             return combatant.name !== removeName;
-        }));
+        });
+
+        // Invoking connection will call setCombatants
+        connection.invoke("SendUpdate", JSON.stringify(filteredArray)).catch((err) => {
+            return console.error(err.toString());
+        });
+
+        // Reset value
+        setRemoveName('');
     };
 
     const handleAddDataChange = (e) => {
