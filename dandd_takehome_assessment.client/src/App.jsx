@@ -16,7 +16,6 @@ function App() {
         .catch(err => console.error('Error connecting to hub:', err));
 
     connection.on('ReceiveUpdate', updatedCombatants => {
-        console.log('Received update:', updatedCombatants);
         setCombatants(JSON.parse(updatedCombatants));
     });
 
