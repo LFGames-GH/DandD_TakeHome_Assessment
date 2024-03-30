@@ -43,9 +43,10 @@ export default defineConfig({
     },
     server: {
         proxy: {
-            '^/weatherforecast': {
+            '^/partyHub': {
                 target,
-                secure: false
+                secure: false,
+                ws: true
             }
         },
         port: 5173,

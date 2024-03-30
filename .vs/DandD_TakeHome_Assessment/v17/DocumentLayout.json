@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{BC477E2F-AF44-49CF-A20C-E94DF425F41E}|dandd_takehome_assessment.client\\dandd_takehome_assessment.client.esproj|solutionrelative:dandd_takehome_assessment.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F9F3AA82-6E1C-4959-AD8A-4FC6E99978B4}|DandD_TakeHome_Assessment.Server\\DandD_TakeHome_Assessment.Server.csproj|c:\\users\\waldo\\source\\repos\\dandd_takehome_assessment\\dandd_takehome_assessment.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F9F3AA82-6E1C-4959-AD8A-4FC6E99978B4}|DandD_TakeHome_Assessment.Server\\DandD_TakeHome_Assessment.Server.csproj|solutionrelative:dandd_takehome_assessment.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F9F3AA82-6E1C-4959-AD8A-4FC6E99978B4}|DandD_TakeHome_Assessment.Server\\DandD_TakeHome_Assessment.Server.csproj|c:\\users\\waldo\\source\\repos\\dandd_takehome_assessment\\dandd_takehome_assessment.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9F3AA82-6E1C-4959-AD8A-4FC6E99978B4}|DandD_TakeHome_Assessment.Server\\DandD_TakeHome_Assessment.Server.csproj|solutionrelative:dandd_takehome_assessment.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9F3AA82-6E1C-4959-AD8A-4FC6E99978B4}|DandD_TakeHome_Assessment.Server\\DandD_TakeHome_Assessment.Server.csproj|c:\\users\\waldo\\source\\repos\\dandd_takehome_assessment\\dandd_takehome_assessment.server\\hubs\\partyhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9F3AA82-6E1C-4959-AD8A-4FC6E99978B4}|DandD_TakeHome_Assessment.Server\\DandD_TakeHome_Assessment.Server.csproj|solutionrelative:dandd_takehome_assessment.server\\hubs\\partyhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC477E2F-AF44-49CF-A20C-E94DF425F41E}|dandd_takehome_assessment.client\\dandd_takehome_assessment.client.esproj|c:\\users\\waldo\\source\\repos\\dandd_takehome_assessment\\dandd_takehome_assessment.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BC477E2F-AF44-49CF-A20C-E94DF425F41E}|dandd_takehome_assessment.client\\dandd_takehome_assessment.client.esproj|solutionrelative:dandd_takehome_assessment.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\DandD_TakeHome_Assessment.Server\\Program.cs",
+              "RelativeDocumentMoniker": "DandD_TakeHome_Assessment.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\DandD_TakeHome_Assessment.Server\\Program.cs",
+              "RelativeToolTip": "DandD_TakeHome_Assessment.Server\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T22:12:09.723Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -32,35 +49,35 @@
               "RelativeDocumentMoniker": "dandd_takehome_assessment.client\\src\\App.jsx",
               "ToolTip": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\dandd_takehome_assessment.client\\src\\App.jsx",
               "RelativeToolTip": "dandd_takehome_assessment.client\\src\\App.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-03-30T16:26:02.017Z",
+              "WhenOpened": "2024-03-30T22:09:26.959Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\DandD_TakeHome_Assessment.Server\\Program.cs",
-              "RelativeDocumentMoniker": "DandD_TakeHome_Assessment.Server\\Program.cs",
-              "ToolTip": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\DandD_TakeHome_Assessment.Server\\Program.cs",
-              "RelativeToolTip": "DandD_TakeHome_Assessment.Server\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T16:23:05.636Z",
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\DandD_TakeHome_Assessment.Server\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "DandD_TakeHome_Assessment.Server\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\DandD_TakeHome_Assessment.Server\\Properties\\launchSettings.json",
+              "RelativeToolTip": "DandD_TakeHome_Assessment.Server\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-30T22:04:32.923Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PartyHub.cs",
-              "DocumentMoniker": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\DandD_TakeHome_Assessment.Server\\Hubs\\PartyHub.cs",
-              "RelativeDocumentMoniker": "DandD_TakeHome_Assessment.Server\\Hubs\\PartyHub.cs",
-              "ToolTip": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\DandD_TakeHome_Assessment.Server\\Hubs\\PartyHub.cs",
-              "RelativeToolTip": "DandD_TakeHome_Assessment.Server\\Hubs\\PartyHub.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T16:19:55.379Z",
+              "DocumentIndex": 3,
+              "Title": "vite.config.js",
+              "DocumentMoniker": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\dandd_takehome_assessment.client\\vite.config.js",
+              "RelativeDocumentMoniker": "dandd_takehome_assessment.client\\vite.config.js",
+              "ToolTip": "C:\\Users\\waldo\\source\\repos\\DandD_TakeHome_Assessment\\dandd_takehome_assessment.client\\vite.config.js",
+              "RelativeToolTip": "dandd_takehome_assessment.client\\vite.config.js",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAC0AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-30T19:44:07.762Z",
               "EditorCaption": ""
             }
           ]

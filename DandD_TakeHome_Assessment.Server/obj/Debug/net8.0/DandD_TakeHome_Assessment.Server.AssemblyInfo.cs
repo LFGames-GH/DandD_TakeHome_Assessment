@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DandD_TakeHome_Assessment.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8448ee2095795889eb0dc94351361c883bee896a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a158fb13c75780ab656a6c4dfa6f6820ddda59c")]
 [assembly: System.Reflection.AssemblyProductAttribute("DandD_TakeHome_Assessment.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DandD_TakeHome_Assessment.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

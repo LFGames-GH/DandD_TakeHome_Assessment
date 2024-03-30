@@ -5,7 +5,7 @@ import redFrame from '../src/assets/images/OrnateRedFrame.png';
 import './App.css';
 
 function App() {
-    const connection = new HubConnectionBuilder().withUrl('https://localhost:5173/partyHub', {
+    const connection = new HubConnectionBuilder().withUrl('https://localhost:7175/partyHub', {
         skipNegotiation: true,
         transport: HttpTransportType.WebSockets
     }).build();
