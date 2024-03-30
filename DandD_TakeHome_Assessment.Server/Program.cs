@@ -27,7 +27,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-app.MapHub<PartyHub>("/");
+app.MapHub<PartyHub>("/partyHub");
 
 app.MapFallbackToFile("/index.html");
 
