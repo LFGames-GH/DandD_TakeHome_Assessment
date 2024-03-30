@@ -1,26 +1,11 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { HubConnectionBuilder, HttpTransportType } from '@microsoft/signalr';
 import Combatants from './components/Combatants';
 import redFrame from '../src/assets/images/OrnateRedFrame.png';
 import './App.css';
 
 function App() {
-    // SignalR connection
-    const connection = new HubConnectionBuilder().withUrl('https://localhost:7175/partyHub', {
-        skipNegotiation: true,
-        transport: HttpTransportType.WebSockets
-    }).build();
-
-    connection.start()
-        .then(() => console.log('Connected to SignalR hub'))
-        .catch(err => console.error('Error connecting to hub:', err));
-
-    connection.on('ReceiveUpdate', updatedCombatants => {
-        setCombatants(JSON.parse(updatedCombatants));
-    });
-
-
-    // State
+    const [connection, setConnection] = useState(null);
     const [hasStarted, setHasStarted] = useState(false);
     const [addData, setAddData] = useState({
         name: '',
@@ -29,8 +14,36 @@ function App() {
     const [removeName, setRemoveName] = useState('');
     const [combatants, setCombatants] = useState([]);
 
+    useEffect(() => {
+        const newConnection = new HubConnectionBuilder().withUrl('https://localhost:7175/partyHub', {
+            skipNegotiation: true,
+            transport: HttpTransportType.WebSockets
+        }).build();
 
-    // Methods
+        setConnection(newConnection);
+    }, []);
+
+    useEffect(() => {
+        async function start() {
+            if (connection) {
+                try {
+                    connection.start()
+                        .then(() => console.log('Connected to SignalR hub'))
+                        .catch(err => console.error('Error connecting to hub:', err));
+
+                    connection.on('ReceiveUpdate', updatedCombatants => {
+                        setCombatants(JSON.parse(updatedCombatants));
+                    });
+                }
+                catch (err) {
+                    console.log(err);
+                }
+            }
+        }
+
+        start();
+    }, [connection]);
+
     const getInitiative = (bonus) => {
         return (Math.floor(Math.random() * 20) + 1) + Number(bonus);
     };
