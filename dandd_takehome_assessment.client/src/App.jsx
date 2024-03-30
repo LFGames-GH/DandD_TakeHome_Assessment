@@ -1,9 +1,26 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { HubConnectionBuilder, HttpTransportType } from '@microsoft/signalr';
 import Combatants from './components/Combatants';
 import redFrame from '../src/assets/images/OrnateRedFrame.png';
 import './App.css';
 
 function App() {
+    // SignalR connection
+    const connection = new HubConnectionBuilder().withUrl('https://localhost:7175/partyHub', {
+        skipNegotiation: true,
+        transport: HttpTransportType.WebSockets
+    }).build();
+
+    connection.start()
+        .then(() => console.log('Connected to SignalR hub'))
+        .catch(err => console.error('Error connecting to hub:', err));
+
+    connection.on('ReceiveUpdate', updatedCombatants => {
+        setCombatants(JSON.parse(updatedCombatants));
+    });
+
+
+    // State
     const [hasStarted, setHasStarted] = useState(false);
     const [addData, setAddData] = useState({
         name: '',
@@ -12,6 +29,8 @@ function App() {
     const [removeName, setRemoveName] = useState('');
     const [combatants, setCombatants] = useState([]);
 
+
+    // Methods
     const getInitiative = (bonus) => {
         return (Math.floor(Math.random() * 20) + 1) + Number(bonus);
     };
@@ -25,7 +44,14 @@ function App() {
 
         if (firstItem != null) tempArray.unshift(firstItem);
 
-        setCombatants(tempArray);
+        sendUpdate(tempArray);
+    };
+
+    const sendUpdate = (tempArray) => {
+        // Invoking connection will call setCombatants
+        connection.invoke("SendUpdate", JSON.stringify(tempArray)).catch((err) => {
+            return console.error(err.toString());
+        });
     };
 
     const addCombatant = () => {
@@ -51,9 +77,14 @@ function App() {
     const removeCombatant = () => {
         if (removeName == '') return;
 
-        setCombatants(combatants.filter((combatant) => {
+        const filteredArray = combatants.filter((combatant) => {
             return combatant.name !== removeName;
-        }));
+        });
+
+        sendUpdate(filteredArray);
+
+        // Reset value
+        setRemoveName('');
     };
 
     const handleAddDataChange = (e) => {
@@ -82,18 +113,23 @@ function App() {
     const nextTurn = () => {
         if (combatants.length == 0) return;
 
-        setCombatants(([first, ...rest]) => [...rest, first]);
+        let temp = [...combatants];
+        const firstItem = temp.shift();
+
+        temp.push(firstItem);
+
+        sendUpdate(temp);
 
         if (!hasStarted) setHasStarted(true);
     };
 
     const previousTurn = () => {
-        if (combatants.length == 0) return;
+        if (!hasStarted || combatants.length == 0) return;
 
         let temp = [...combatants];
         let lastItem = temp.pop();
 
-        setCombatants([lastItem, ...temp]);
+        sendUpdate([lastItem, ...temp]);
     };
 
     return (
