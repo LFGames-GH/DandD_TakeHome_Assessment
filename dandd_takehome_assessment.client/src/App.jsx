@@ -45,6 +45,10 @@ function App() {
 
         if (firstItem != null) tempArray.unshift(firstItem);
 
+        sendUpdate(tempArray);
+    };
+
+    const sendUpdate = (tempArray) => {
         // Invoking connection will call setCombatants
         connection.invoke("SendUpdate", JSON.stringify(tempArray)).catch((err) => {
             return console.error(err.toString());
@@ -78,10 +82,7 @@ function App() {
             return combatant.name !== removeName;
         });
 
-        // Invoking connection will call setCombatants
-        connection.invoke("SendUpdate", JSON.stringify(filteredArray)).catch((err) => {
-            return console.error(err.toString());
-        });
+        sendUpdate(filteredArray);
 
         // Reset value
         setRemoveName('');
@@ -113,18 +114,23 @@ function App() {
     const nextTurn = () => {
         if (combatants.length == 0) return;
 
-        setCombatants(([first, ...rest]) => [...rest, first]);
+        let temp = [...combatants];
+        const firstItem = temp.shift();
+
+        temp.push(firstItem);
+
+        sendUpdate(temp);
 
         if (!hasStarted) setHasStarted(true);
     };
 
     const previousTurn = () => {
-        if (combatants.length == 0) return;
+        if (!hasStarted || combatants.length == 0) return;
 
         let temp = [...combatants];
         let lastItem = temp.pop();
 
-        setCombatants([lastItem, ...temp]);
+        sendUpdate([lastItem, ...temp]);
     };
 
     return (
