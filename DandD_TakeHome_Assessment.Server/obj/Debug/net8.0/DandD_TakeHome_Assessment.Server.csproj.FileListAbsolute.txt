@@ -33,3 +33,6 @@ C:\Users\waldo\source\repos\DandD_TakeHome_Assessment\DandD_TakeHome_Assessment.
 C:\Users\waldo\source\repos\DandD_TakeHome_Assessment\DandD_TakeHome_Assessment.Server\obj\Debug\net8.0\DandD_TakeHome_Assessment.Server.pdb
 C:\Users\waldo\source\repos\DandD_TakeHome_Assessment\DandD_TakeHome_Assessment.Server\obj\Debug\net8.0\DandD_TakeHome_Assessment.Server.genruntimeconfig.cache
 C:\Users\waldo\source\repos\DandD_TakeHome_Assessment\DandD_TakeHome_Assessment.Server\obj\Debug\net8.0\ref\DandD_TakeHome_Assessment.Server.dll
+C:\Users\waldo\source\repos\DandD_TakeHome_Assessment\DandD_TakeHome_Assessment.Server\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\waldo\source\repos\DandD_TakeHome_Assessment\DandD_TakeHome_Assessment.Server\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\waldo\source\repos\DandD_TakeHome_Assessment\DandD_TakeHome_Assessment.Server\obj\Debug\net8.0\DandD_TakeHome_Assessment.Server.sourcelink.json

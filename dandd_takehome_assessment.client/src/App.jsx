@@ -1,9 +1,23 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { HubConnectionBuilder, HttpTransportType } from '@microsoft/signalr';
 import Combatants from './components/Combatants';
 import redFrame from '../src/assets/images/OrnateRedFrame.png';
 import './App.css';
 
 function App() {
+    const connection = new HubConnectionBuilder().withUrl('https://localhost:5173/', {
+        skipNegotiation: true,
+        transport: HttpTransportType.WebSockets
+    }).build();
+
+    connection.start()
+        .then(() => console.log('Connected to SignalR hub'))
+        .catch(err => console.error('Error connecting to hub:', err));
+
+    connection.on('ReceiveUpdate', update => {
+        console.log('Received update:', update);
+    });
+
     const [hasStarted, setHasStarted] = useState(false);
     const [addData, setAddData] = useState({
         name: '',
@@ -40,6 +54,10 @@ function App() {
         });
 
         sortAndSetCombatants(temp, hasStarted);
+
+        connection.invoke("SendUpdate", "This is a test!").catch((err) => {
+            return console.error(err.toString());
+        });
 
         // Reset values
         setAddData({
