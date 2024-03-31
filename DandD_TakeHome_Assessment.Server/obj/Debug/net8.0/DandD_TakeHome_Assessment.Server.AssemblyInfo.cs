@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DandD_TakeHome_Assessment.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< Updated upstream
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+633785ab6d81660971acd7b495618f72bcf5a44f")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8448ee2095795889eb0dc94351361c883bee896a")]
->>>>>>> Stashed changes
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa073af03c00d875b8e1241eb5d26ae8b2c65718")]
 [assembly: System.Reflection.AssemblyProductAttribute("DandD_TakeHome_Assessment.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DandD_TakeHome_Assessment.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
