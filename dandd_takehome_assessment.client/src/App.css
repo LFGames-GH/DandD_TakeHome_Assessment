@@ -25,7 +25,7 @@ h1, button {
 
 #controls {
     margin: auto;
-    max-width: 250px;
+    width: calc(332px + 0.2em);
 }
 
 #controls > div {
@@ -40,8 +40,32 @@ button {
     width: 100%;
 }
 
-.c-accent {
-    background-color: #b6060e;
+#previous, #next, #reroll {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: 60px;
+}
+
+#previous {
+    background-image: url("assets/images/RedButton_Previous.png");
+}
+
+#previous span {
+    margin-left: 2em;
+}
+
+#next {
+    background-image: url("assets/images/RedButton_Next.png");
+}
+
+#next span {
+    margin-right: 2em;
+}
+
+#reroll {
+    background-image: url("assets/images/RedButton.png");
+    background-size: cover;
+    height: 51px;
 }
 
 .flex > button {
@@ -49,11 +73,11 @@ button {
 }
 
 .flex > button:first-child {
-    margin-right: 0.25em;
+    margin-right: 0.1em;
 }
 
 .flex > button:last-child {
-    margin-left: 0.25em;
+    margin-left: 0.1em;
 }
 
 input {

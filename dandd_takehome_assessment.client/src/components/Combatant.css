@@ -1,14 +1,17 @@
 .combatant {
-    display: inline-block;
-    margin: 0 0.5em;
+    display: inline-grid;
+    margin: 0 0.5em 1em;
+    max-width: 50px;
 }
 
 .combatant img {
-    margin-bottom: 0.25em;
+    margin: 0 auto 0.25em;
     height: 50px;
     width: 50px;
 }
 
 .combatant p {
     margin: 0;
+    overflow-x: hidden;
+    word-wrap: break-word;
 }

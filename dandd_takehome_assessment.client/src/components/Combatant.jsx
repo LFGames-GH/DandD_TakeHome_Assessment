@@ -4,7 +4,7 @@ import './Combatant.css';
 function Combatant(props) {
     return (
         <div className="combatant">
-            <img src={thumbnail} />
+            <img alt="hooded rogue" src={thumbnail} />
             <p>{props.name}</p>
         </div>
     );

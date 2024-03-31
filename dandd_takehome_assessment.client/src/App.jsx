@@ -148,7 +148,7 @@ function App() {
     return (
         <div className="page flex">
             <h1>Initiative Tracker</h1>
-            <img className="frame" src={redFrame} />
+            <img alt="decorative frame" className="frame" src={redFrame} />
 
             <div id="content">
                 <Combatants combatants={combatants} />
@@ -156,21 +156,25 @@ function App() {
                 <div id="controls">
                     <div>
                         <div className="flex">
-                            <button className="c-accent" onClick={previousTurn}>Previous</button>
-                            <button className="c-accent" onClick={nextTurn}>Next</button>
+                            <button type="button" id="previous" onClick={previousTurn}>
+                                <span>Previous</span>
+                            </button>
+                            <button type="button" id="next" onClick={nextTurn}>
+                                <span>Next</span>
+                            </button>
                         </div>
-                        <button className="c-accent" onClick={rerollInitiative}>Reroll Initiative</button>
+                        <button type="button" id="reroll" onClick={rerollInitiative}>Reroll Initiative</button>
                     </div>
                 
                     <div>
                         <input type="text" placeholder="Name" value={removeName} onChange={(e) => setRemoveName(e.target.value)} />
-                        <button onClick={removeCombatant}>Remove Combatant</button>
+                        <button type="button" onClick={removeCombatant}>Remove Combatant</button>
                     </div>
 
                     <div>
                         <input type="text" placeholder="Name" value={addData.name} name="name" onChange={handleAddDataChange} />
                         <input type="number" placeholder="Initiative Bonus" value={addData.bonus} name="bonus" onChange={handleAddDataChange} />
-                        <button onClick={addCombatant}>Add Combatant</button>
+                        <button type="button" onClick={addCombatant}>Add Combatant</button>
                     </div>
                 </div>
             </div>
